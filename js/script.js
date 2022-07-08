@@ -139,9 +139,9 @@ let interval = setInterval(nextImage, 3000)
 button.addEventListener('click', () => {
     if (isPlaying) {
         clearInterval(interval)
-        button.innerHTML = 'Play'
+        button.innerHTML = 'Resume'
     } else{
-        button.innerHTML = 'Stop'    
+        button.innerHTML = 'Pause'    
         interval = setInterval(nextImage, 3000)
     }
     isPlaying = !isPlaying;
